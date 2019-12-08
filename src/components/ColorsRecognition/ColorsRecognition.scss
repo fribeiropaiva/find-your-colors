@@ -5,8 +5,10 @@
   justify-content: space-between;
   margin: 0 auto;
   .img {
-    max-width: 427px;
-    height: auto;
+    img {
+      max-width: 427px;
+      height: auto;
+    }
   }
   .colors {
     width: 100%;

@@ -2,19 +2,14 @@ import React from "react";
 import "./ColorsRecognition.scss";
 import apple from "./apple.png";
 
-const ColorsRecognition = () => {
+const ColorsRecognition = ({ img, colors }) => {
   return (
     <main className="ColorsRecognition">
       <section className="img">
-        <img src={apple} />
+        <img src={img} />
       </section>
       <section className="colors">
-        <ul className="colors-list">
-          <li>color 1</li>
-          <li>color 2</li>
-          <li>color 3</li>
-          <li>color 4</li>
-        </ul>
+        <ul className="colors-list">{colors}</ul>
       </section>
     </main>
   );
