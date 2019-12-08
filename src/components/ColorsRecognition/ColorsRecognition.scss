@@ -4,20 +4,25 @@
   display: flex;
   justify-content: space-between;
   margin: 0 auto;
-  .img {
-    img {
-      max-width: 427px;
-      height: auto;
-    }
+
+  img {
+    max-width: 427px;
+    height: auto;
+    border-radius: 9px;
   }
+
   .colors {
     width: 100%;
     max-width: 200px;
     height: auto;
-    padding-top: 20px;
     .colors-list {
+      padding-top: 3px;
+      margin-top: 0;
       list-style: none;
-      li {
+      .list-item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
         margin-bottom: 10px;
       }
     }

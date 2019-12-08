@@ -13,9 +13,15 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100%;
-}
-
-.App-link {
-  color: #61dafb;
+  height: 70%;
+  .app-title {
+    max-width: 650px;
+    margin-bottom: 75px;
+    span {
+      color: #007bff;
+    }
+    .call-to-action {
+      color: #19b2ff;
+    }
+  }
 }

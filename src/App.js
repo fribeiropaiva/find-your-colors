@@ -23,34 +23,42 @@ function App() {
   const onButtonSubmit = () => {
     setIsDetecting(!isDetecting);
     setImgUrl(input);
+    if (colorData) {
+      console.log(colorData);
+    }
   };
 
   useEffect(() => {
-    if (isDetecting) {
-      app.models
-        .predict(Clarifai.COLOR_MODEL, imgUrl)
-        .then(response => {
-          const colors = response.outputs[0].data.colors.map(color => {
-            let colorBox = {
-              background: color.raw_hex,
-              width: "50px",
-              height: "50px"
-            };
-            return (
-              <div className="list-item">
-                <li>{color.raw_hex}</li>
-                <div style={colorBox}></div>
-              </div>
-            );
-          });
-          setColorData(colors);
-        })
-        .catch(err => console.log(err));
-    }
-  }, [imgUrl]);
+    setColorData(null);
+    app.models
+      .predict(Clarifai.COLOR_MODEL, imgUrl)
+      .then(response => {
+        console.log(response);
+        const colors = response.outputs[0].data.colors.map(color => {
+          let colorBox = {
+            background: color.raw_hex,
+            width: "50px",
+            height: "50px",
+            borderRadius: "9px"
+          };
+          return (
+            <div className="list-item">
+              <li>{color.raw_hex}</li>
+              <div style={colorBox}></div>
+            </div>
+          );
+        });
+        setColorData(colors);
+      })
+      .catch(err => console.log(err));
+  }, [isDetecting]);
 
   return (
     <main className="App">
+      <h1 className="app-title">
+        <span>Find Your Colors </span>will show you the dominant colors in a
+        given picture. <span className="call-to-action">Give it a try!</span>
+      </h1>
       <ImageLinkForm
         onInputChange={onInputChange}
         onButtonSubmit={onButtonSubmit}
