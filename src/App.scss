@@ -13,7 +13,10 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 70%;
+  height: auto;
+  max-width: 900px;
+  margin: 0 auto;
+  padding-top: 32px;
   .app-title {
     max-width: 650px;
     margin-bottom: 75px;

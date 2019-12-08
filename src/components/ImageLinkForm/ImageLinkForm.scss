@@ -25,5 +25,8 @@
     text-transform: uppercase;
     font-family: "Roboto", sans-serif;
     font-weight: 700;
+    &:focus {
+      outline: none;
+    }
   }
 }
