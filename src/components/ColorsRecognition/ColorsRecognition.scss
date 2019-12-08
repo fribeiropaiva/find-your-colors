@@ -1,0 +1,22 @@
+.ColorsRecognition {
+  width: 100%;
+  max-width: 677px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  .img {
+    max-width: 427px;
+    height: auto;
+  }
+  .colors {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    .colors-list {
+      list-style: none;
+      li {
+        margin-bottom: 10px;
+      }
+    }
+  }
+}
