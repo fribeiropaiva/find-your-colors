@@ -1,3 +1,5 @@
+$mobile: 768px;
+
 body {
   height: 100vh;
 }
@@ -17,9 +19,17 @@ body {
   max-width: 900px;
   margin: 0 auto;
   padding-top: 32px;
+  @media (max-width: $mobile) {
+    padding: 32px 10px;
+  }
   .app-title {
     max-width: 650px;
     margin-bottom: 75px;
+    @media (max-width: $mobile) {
+      font-size: 26px;
+      margin-bottom: 50px;
+      padding: 0 15px;
+    }
     span {
       color: #007bff;
     }
