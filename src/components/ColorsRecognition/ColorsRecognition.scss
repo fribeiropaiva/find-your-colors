@@ -5,6 +5,7 @@ $mobile: 768px;
   display: flex;
   justify-content: space-between;
   margin: 0 auto;
+  margin-bottom: 50px;
   @media (max-width: $mobile) {
     flex-direction: column;
     align-items: center;

@@ -54,17 +54,26 @@ function App() {
   }, [isDetecting]);
 
   return (
-    <main className="App">
-      <h1 className="app-title">
-        <span>Find Your Colors </span>will show you the dominant colors in a
-        given picture. <span className="call-to-action">Give it a try!</span>
-      </h1>
-      <ImageLinkForm
-        onInputChange={onInputChange}
-        onButtonSubmit={onButtonSubmit}
-      />
-      <ColorsRecognition img={imgUrl} colors={colorData} />
-    </main>
+    <React.Fragment>
+      <main className="App">
+        <h1 className="app-title">
+          <span>Find Your Colors </span>will show you the dominant colors in a
+          given picture. <span className="call-to-action">Give it a try!</span>
+        </h1>
+
+        <ImageLinkForm
+          onInputChange={onInputChange}
+          onButtonSubmit={onButtonSubmit}
+        />
+        <ColorsRecognition img={imgUrl} colors={colorData} />
+      </main>
+      <footer>
+        <p>
+          Desenvolvido por Filipe Ribeiro Paiva -{" "}
+          <a>https://github.com/ribeiro240</a>
+        </p>
+      </footer>
+    </React.Fragment>
   );
 }
 

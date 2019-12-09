@@ -2,7 +2,7 @@ $mobile: 768px;
 
 .ImageLinkForm {
   width: 100%;
-  max-width: 600px;
+  max-width: 615px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
@@ -22,12 +22,12 @@ $mobile: 768px;
     }
     @media (max-width: $mobile) {
       margin-bottom: 8px;
-      width: 95%;
+      width: 93%;
     }
   }
   .detect-btn {
     border-radius: 30px;
-    padding: 14px;
+    padding: 14px 20px;
     border-style: none;
     background: #007bff;
     color: white;
