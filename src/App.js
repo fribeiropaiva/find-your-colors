@@ -70,7 +70,9 @@ function App() {
       <footer>
         <p>
           Desenvolvido por Filipe Ribeiro Paiva -{" "}
-          <a>https://github.com/ribeiro240</a>
+          <a href="https://github.com/ribeiro240" target="_blank">
+            https://github.com/ribeiro240
+          </a>
         </p>
       </footer>
     </React.Fragment>
