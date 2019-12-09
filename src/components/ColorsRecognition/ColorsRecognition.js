@@ -1,6 +1,5 @@
 import React from "react";
 import "./ColorsRecognition.scss";
-import apple from "./apple.png";
 
 const ColorsRecognition = ({ img, colors }) => {
   return (
