@@ -1,0 +1,42 @@
+$mobile: 768px;
+
+.ImageLinkForm {
+  width: 100%;
+  max-width: 615px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+  @media (max-width: $mobile) {
+    flex-direction: column;
+    align-items: center;
+  }
+  .img-input {
+    width: 100%;
+    max-width: 418px;
+    padding: 10px 15px;
+    border-radius: 30px;
+    border: 1px solid lightblue;
+    &:focus {
+      outline: none;
+    }
+    @media (max-width: $mobile) {
+      margin-bottom: 8px;
+      width: 93%;
+    }
+  }
+  .detect-btn {
+    border-radius: 30px;
+    padding: 14px 20px;
+    border-style: none;
+    background: #007bff;
+    color: white;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    &:focus {
+      outline: none;
+    }
+  }
+}

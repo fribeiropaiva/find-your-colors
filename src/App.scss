@@ -1,0 +1,63 @@
+$mobile: 768px;
+
+#root {
+  height: 100%;
+}
+
+.App {
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  max-height: auto;
+  max-width: 900px;
+  margin: 0 auto;
+  padding-top: 32px;
+  @media (max-width: $mobile) {
+    padding: 32px 10px;
+  }
+  .main-area {
+    width: 100%;
+    height: auto;
+    margin-bottom: 100px;
+  }
+
+  .app-title {
+    max-width: 650px;
+    margin-bottom: 75px;
+    @media (max-width: $mobile) {
+      font-size: 26px;
+      margin-bottom: 50px;
+      padding: 0 15px;
+    }
+    span {
+      color: #007bff;
+    }
+    .call-to-action {
+      color: #19b2ff;
+    }
+  }
+}
+
+footer {
+  bottom: 0;
+  width: 100%;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  text-align: center;
+  font-size: 14px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: black;
+  p {
+    color: white;
+  }
+  a {
+    color: #ff2a19;
+  }
+}

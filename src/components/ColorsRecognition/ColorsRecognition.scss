@@ -1,0 +1,44 @@
+$mobile: 768px;
+.ColorsRecognition {
+  width: 100%;
+  max-width: 720px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  @media (max-width: $mobile) {
+    flex-direction: column;
+    align-items: center;
+  }
+  .img {
+    @media (max-width: $mobile) {
+      margin-bottom: 45px;
+      padding: 0 10px;
+    }
+    img {
+      max-width: 500px;
+      height: auto;
+      border-radius: 9px;
+      @media (max-width: $mobile) {
+        max-width: 310px;
+      }
+    }
+  }
+
+  .colors {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    .colors-list {
+      padding-top: 3px;
+      margin-top: 0;
+      list-style: none;
+      .list-item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 10px;
+      }
+    }
+  }
+}
