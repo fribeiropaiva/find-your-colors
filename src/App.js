@@ -13,7 +13,9 @@ const app = new Clarifai.App({
 function App() {
   const [input, setInput] = useState("");
   const [isDetecting, setIsDetecting] = useState(false);
-  const [imgUrl, setImgUrl] = useState("");
+  const [imgUrl, setImgUrl] = useState(
+    "https://images.pexels.com/photos/414612/pexels-photo-414612.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+  );
   const [colorData, setColorData] = useState(null);
 
   const onInputChange = event => {
