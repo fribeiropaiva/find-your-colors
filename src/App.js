@@ -25,9 +25,6 @@ function App() {
   const onButtonSubmit = () => {
     setIsDetecting(!isDetecting);
     setImgUrl(input);
-    if (colorData) {
-      console.log(colorData);
-    }
   };
 
   useEffect(() => {
